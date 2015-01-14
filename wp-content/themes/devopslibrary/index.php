@@ -197,7 +197,7 @@
         </div>
         <div class="content-row">
             <?php
-            $args = array('numberposts' => 10,
+            $args = array('numberposts' => 3,
                 'offset' => 0,
                 'category' => 0,
                 'orderby' => 'post_date',
@@ -208,54 +208,23 @@
 
             $recent_posts = wp_get_recent_posts($args, ARRAY_A);
             foreach ($recent_posts as $post) {
-                echo $post["ID"];
-                $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post['id']) );
-                echo $feat_image;
+                ?>
+                <ul class="topics">
+                    <li data-category="Tech">
+                        <a href="http://www.devopslibrary.com/Temp" title="Temp">
+                            <div class="thumb">
+                                <?php echo get_the_post_thumbnail($post['ID'],array(112,63)); ?>
+                            </div>
+                            <div class="content">
+                                <h3><?php echo get_the_title($post['ID']); ?></h3>
+                                <p class="meta"><?php echo get_the_time(get_option('date_format'), $post['ID']);?></p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <?php
             }
-
             ?>
-            <ul class="topics">
-                <li data-category="Tech">
-                    <a href="http://www.devopslibrary.com/Temp" title="Temp">
-                        <div class="thumb">
-                            <img alt="Temp" src="<?php bloginfo('stylesheet_directory'); ?>/images/chef2.jpg">
-                        </div>
-                        <div class="content">
-                            <h3>First Chef Recipe</h3>
-
-                            <p class="meta">January 11, 2015</p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-            <ul class="topics">
-                <li data-category="Arts">
-                    <a href="http://www.devopslibrary.com/Temp" title="Temp">
-                        <div class="thumb">
-                            <img alt="Temp" src="<?php bloginfo('stylesheet_directory'); ?>/images/jenkins.jpg">
-                        </div>
-                        <div class="content">
-                            <h3>Jenkins for Ops</h3>
-
-                            <p class="meta">January 12, 2015</p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-            <ul class="topics">
-                <li data-category="Food">
-                    <a href="http://www.devopslibrary.com/guides/1203-How-to-Make-Christmas-Cookies" title="Temp">
-                        <div class="thumb">
-                            <img alt="Temp" src="<?php bloginfo('stylesheet_directory'); ?>/images/docker.jpg">
-                        </div>
-                        <div class="content">
-                            <h3>Introduction to Docker</h3>
-
-                            <p class="meta">January 13, 2015</p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
         </div>
     </section>
 
