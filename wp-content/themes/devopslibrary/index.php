@@ -211,7 +211,7 @@
                 ?>
                 <ul class="topics">
                     <li data-category="Tech">
-                        <a href="http://www.devopslibrary.com/Temp" title="Temp">
+                        <a href="<?php echo get_permalink($post['ID']); ?>" title="Temp">
                             <div class="thumb">
                                 <?php echo get_the_post_thumbnail($post['ID'],array(112,63)); ?>
                             </div>
