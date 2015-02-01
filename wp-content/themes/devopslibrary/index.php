@@ -1,22 +1,16 @@
 <?php get_header(); ?>
-<body class="homepage_index" data-action="index" data-controller="homepage" itemscope=""
-      itemtype="http://schema.org/WebPage" data-twttr-rendered="true">
+<body class="homepage_index">
 <header>
     <ul class="navbar">
         <li>
-            <a href="images/devopslibrary   The best how-to videos on the web.html" id="logo">devopslibrary</a>
-        </li>
-        <li>
             <form action="http://www.devopslibrary.com/search" id="search">
                 <input autocomplete="off" class="search-query ui-autocomplete-input" id="term" name="term"
-                       placeholder="Search Videos &amp; Guides" type="text" role="textbox" aria-autocomplete="list"
-                       aria-haspopup="true">
+                       placeholder="Search Videos &amp; Guides" type="text">
                 <a class="search-submit-link" href="http://www.devopslibrary.com/#"><i
                         class="icon2-search"></i>Search</a>
                 <input style="display:none;" type="submit" value="Search">
                 <ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox"
-                    aria-activedescendant="ui-active-menuitem"
-                    style="z-index: 1; top: 0px; left: 0px; display: none;"></ul>
+                    style="z-index: 1; top: 0; left: 0; display: none;"></ul>
             </form>
         </li>
         <li class="dropdown dropdown-categories">
@@ -394,13 +388,6 @@
 
     //]]>
 </script>
-
-<iframe src="images/container.html" style="visibility: hidden; display: none;"></iframe>
-<noscript>
-    &lt;div style='display: none'&gt;
-    &lt;img alt="Quantcast" border="0" height="1" src="//pixel.quantserve.com/pixel/p-e3dbUX4Rp2rJ-.gif" width="1" /&gt;
-    &lt;/div&gt;
-</noscript>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
