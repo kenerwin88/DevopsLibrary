@@ -9,7 +9,7 @@
  * @since Twenty Fifteen 1.0
  */
 ?><!DOCTYPE html>
-<html <?php language_attributes(); ?> class="no-js">
+<html>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<link rel="profile" href="http://gmpg.org/xfn/11">

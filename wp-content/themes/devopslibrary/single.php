@@ -22,7 +22,7 @@
         <li class="dropdown dropdown-categories">
             <a class="toggle" href="http://www.devopslibrary.com/#">Categories<i class="icon2-dropdown"></i></a>
             <ul class="dropdown-menu">
-                <li><a href="http://www.devopslibrary.com/categories/5-Style">Chef</a></li>
+                <li><a href="http://www.devopslibrary.com/categories/5-Style">AChef</a></li>
                 <li><a href="http://www.devopslibrary.com/categories/1-Food">Continous Integration</a></li>
                 <li><a href="http://www.devopslibrary.com/categories/2-Tech">Monitoring</a></li>
                 <li><a href="http://www.devopslibrary.com/categories/4-Dance">Version Control</a></li>
@@ -395,6 +395,22 @@
     //]]>
 </script>
 
+<script>
+    //<![CDATA[
+    var _qevents = _qevents || [];
+    (function () {
+        var elem = document.createElement('script');
+        elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+        elem.async = true;
+        elem.type = "text/javascript";
+        var scpt = document.getElementsByTagName('script')[0];
+        scpt.parentNode.insertBefore(elem, scpt);
+    })();
+    _qevents.push({
+        qacct: "p-e3dbUX4Rp2rJ-"
+    });
+    //]]>
+</script>
 <iframe src="images/container.html" style="visibility: hidden; display: none;"></iframe>
 <noscript>
     &lt;div style='display: none'&gt;
