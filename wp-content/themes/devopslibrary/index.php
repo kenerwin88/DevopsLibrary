@@ -57,125 +57,48 @@
                 </div>
                 <div class="window">
                     <ol style="left: -2910px;">
-                        <li class="">
-                            <a href="http://www.devopslibrary.com/Temp" title="Temp">
-                                <div class="content">
-                                    <h1>Stir it up, your first Chef recipe</h1>
+                        <?php
+                        global $post;
+                        $args = array( 'posts_per_page' => 5, 'orderby' => 'rand' );
+                        $rand_posts = get_posts( $args );
+                        foreach ( $rand_posts as $post ) :
 
-                                    <div class="category health">
-                                        <span>Configuration Management</span>
-                                    </div>
-                                </div>
-                                <div class="video-thumb">
-                                    <img alt="Weight Loss Tips"
-                                         src="<?php bloginfo('stylesheet_directory'); ?>/images/chef2.jpg">
-                                    <span class="play"></span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="http://www.devopslibrary.com" title="Temp">
-                                <div class="content">
-                                    <h1>Take me to me whale!</h1>
+                            setup_postdata( $post ); ?>
+                            <li class="">
+                                <a href="<?php the_permalink(); ?>">
+                                    <div class="content">
+                                        <h1><?php the_title(); ?></h1>
 
-                                    <div class="category dance">
-                                        <span>Containers</span>
+                                        <div class="category health">
+                                            <span>Configuration Management</span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="video-thumb">
-                                    <img alt="How to Enjoy Winter"
-                                         src="<?php bloginfo('stylesheet_directory'); ?>/images/docker.jpg">
-                                    <span class="play"></span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="http://www.devopslibrary.com/" title="Temp">
-                                <div class="content">
-                                    <h1>Jenkins for Ops Overview</h1>
-
-                                    <div class="category parenting">
-                                        <span>Continuous Integration</span>
+                                    <div class="video-thumb">
+                                        <?php the_post_thumbnail( array(640, 360) ); ?>
+                                        <span class="play"></span>
                                     </div>
-                                </div>
-                                <div class="video-thumb">
-                                    <img alt="Christmas Gift Guide"
-                                         src="<?php bloginfo('stylesheet_directory'); ?>/images/jenkins.jpg">
-                                    <span class="play"></span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="http://www.devopslibrary.com/" title="Temp">
-                                <div class="content">
-                                    <h1>Version Control: Saving and Sharing Code</h1>
-
-                                    <div class="category dance">
-                                        <span>Version Control</span>
-                                    </div>
-                                </div>
-                                <div class="video-thumb">
-                                    <img alt="Temp"
-                                         src="<?php bloginfo('stylesheet_directory'); ?>/images/githubdumped3.jpg">
-                                    <span class="play"></span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="http://www.devopslibrary.com" title="Temp">
-                                <div class="content">
-                                    <h1>Logging (!Flogging) matters: ELK</h1>
-
-                                    <div class="category food">
-                                        <span>Monitoring</span>
-                                    </div>
-                                </div>
-                                <div class="video-thumb">
-                                    <img alt="How to Make Candy"
-                                         src="<?php bloginfo('stylesheet_directory'); ?>/images/elk.jpg">
-                                    <span class="play"></span>
-                                </div>
-                            </a>
-                        </li>
+                                </a>
+                            </li>
+                        <?php endforeach;?>
                     </ol>
                 </div>
             </div>
             <div class="overlay">
                 <a class="prev" href="http://www.devopslibrary.com/#">◀</a>
                 <ol>
+                    <?php
+                    foreach ( $rand_posts as $post ) :
+                        setup_postdata($post);
+                        ?>
+
                     <li style="display: none;">
-                        <h3>Are you good in the kitchen? Fortunately this time it doesn’t matter, you’ll be mixing up
-                            Chef recipes before you know it!</h3>
+                        <h3><?php echo get_the_excerpt(); ?></h3>
 
                         <div class="watch"><a href="http://www.devopslibrary.com/" title="Temp">View Tutorial ▸</a>
                         </div>
                     </li>
-                    <li style="display: none;">
-                        <h3>We'll sail into the harbour no prouder man there'll be. We'll show them all that docker
-                            rocks and really is easy. </h3>
-
-                        <div class="watch"><a href="http://www.devopslibrary.com" title="Temp">View Tutorial ▸</a></div>
-                    </li>
-                    <li style="display: list-item;">
-                        <h3>Jenkins isn't just for developers! Make your scripts easy to reuse, run, and test with our
-                            favorite butler! </h3>
-
-                        <div class="watch"><a href="http://www.devopslibrary.com/" title="Temp">View Tutorial ▸</a>
-                        </div>
-                    </li>
-                    <li style="display: none;">
-                        <h3>Version control is about saving your future self today or: How I learned to stop worrying
-                            and love the Github.</h3>
-
-                        <div class="watch"><a href="http://www.devopslibrary.com/" title="Temp">View Tutorial ▸</a>
-                        </div>
-                    </li>
-                    <li style="display: none;">
-                        <h3>What do you get when you combine Elasticsearch, Logstash, and Kibana? An amazing (and free)
-                            logging platform. </h3>
-
-                        <div class="watch"><a href="http://www.devopslibrary.com" title="Temp">View Tutorial ▸</a></div>
-                    </li>
+                    <?php endforeach;
+                    wp_reset_postdata(); ?>
                 </ol>
                 <a class="next" href="http://www.devopslibrary.com/#">▶</a>
             </div>
@@ -223,62 +146,39 @@
     </section>
 
     <div id="content">
-
+        <?php
+        global $post;
+        $args = array( 'posts_per_page' => 2, 'orderby' => 'rand' );
+        $rand_posts = get_posts( $args );
+        foreach ( $rand_posts as $post ) :
+            setup_postdata( $post ); ?>
         <div id="big-topic-column">
             <div class="col">
                 <div class="big-topic">
                     <div class="category-icon food"></div>
-                    <a href="http://www.devopslibrary.com/Temp" title="Coming Soon">
+                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
                         <div class="content">
-                            <span class="video-thumb"><img alt="Temp" height="160"
-                                                           src="<?php bloginfo('stylesheet_directory'); ?>/images/elk.jpg"
-                                                           width="280"><span class="play"></span></span>
+                            <span class="video-thumb"><?php the_post_thumbnail( array(280, 160) ); ?></span></span>
 
-                            <h2>Logging (!Flogging) Matters: ELK</h2>
+                            <h2><?php the_title(); ?></h2>
 
                             <div class="category food">
-                                <span>Logging</span>
+                                <span>MaLogging</span>
                             </div>
               <span class="expert">
                 <span class="name">Date:</span>
                 <span class="title">January 12, 2015</span>
               </span>
 
-                            <p>Learn how to set up the ELK stack from the ground up, a perfect free logging
-                                platform.</p>
+                            <?php the_excerpt(); ?>
                             <span class="watch-how">View Tutorial ▸</span>
                         </div>
                     </a>
                 </div>
             </div>
         </div>
-        <div id="big-topic-column">
-            <div class="col">
-                <div class="big-topic">
-                    <div class="category-icon food"></div>
-                    <a href="http://www.devopslibrary.com/" title="Temp">
-                        <div class="content">
-                            <span class="video-thumb"><img alt="Temp" height="160"
-                                                           src="<?php bloginfo('stylesheet_directory'); ?>/images/githubdumped3.jpg"
-                                                           width="280"><span class="play"></span></span>
-
-                            <h2>Version Control with Github</h2>
-
-                            <div class="category food">
-                                <span>Version Control</span>
-                            </div>
-              <span class="expert">
-                <span class="name">Date:</span>
-                <span class="title">January 15, 2015</span>
-              </span>
-
-                            <p>An introduction to version control, with a focus on Github.</p>
-                            <span class="watch-how">View Tutorial ▸</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
+        <?php endforeach;
+        wp_reset_postdata(); ?>
         <div class="homepage-sidebar" id="big-topic-column">
             <div class="col">
                 <div id="featured-videos">
