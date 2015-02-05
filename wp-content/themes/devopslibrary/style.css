@@ -39,51 +39,11 @@ p.subtitle {
     word-spacing: 0.08em;
     color: #65747b;
 }
-@font-face {
-    font-family: "Lusitana";
-    font-style: normal;
-    font-weight: 700;
-    src: local("Lusitana Bold"), local("Lusitana-Bold"), url(../fonts/lusitana-bold-700.woff) format("woff");
-}
-@font-face {
-    font-family: "Ovo";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Ovo"), url(../fonts/ovo-normal-400.woff) format("woff");
-}
-@font-face {
-    font-family: "Lusitana";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Lusitana"), url(../fonts/lusitana-normal-400.woff) format("woff");
-}
-@font-face {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Open Sans"), local("OpenSans"), url(../fonts/open-sans-normal-400.woff) format("woff");
-}
 body {
     font-family: Helvetica, sans-serif;
     font-size: 14px;
     color: #373f43;
     line-height: 22px;
-}
-a {
-    text-decoration: none;
-    color: #ff7e00;
-    -o-transition-property: color;
-    -o-transition-duration: 0.12s;
-    -o-transition-timing-function: ease-in;
-    -moz-transition-property: color;
-    -moz-transition-duration: 0.12s;
-    -moz-transition-timing-function: ease-in;
-    -webkit-transition-property: color;
-    -webkit-transition-duration: 0.12s;
-    -webkit-transition-timing-function: ease-in;
-    transition-property: color;
-    transition-duration: 0.12s;
-    transition-timing-function: ease-in;
 }
 a:hover {
     color: #33b7ff;
@@ -118,21 +78,7 @@ h4 {
     color: #373f43;
     text-transform: none;
 }
-p {
-    margin: 0 0 2px 0;
-    padding: 0;
-    font-size: 14px;
-    color: #373f43;
-    line-height: 22px;
-}
-p+h1, p+h2, p+h3, p+h4, p+p {
-    margin-top: 15px;
-}
-p.subtitle {
-    letter-spacing: -0.05em;
-    word-spacing: 0.08em;
-    color: #65747b;
-}
+
 input:focus, select:focus, textarea:focus, button:focus {
     outline: none;
 }
@@ -236,100 +182,7 @@ body #content {
 body a img {
     border: 0;
 }
-@font-face {
-    font-family: "Lusitana";
-    font-style: normal;
-    font-weight: 700;
-    src: local("Lusitana Bold"), local("Lusitana-Bold"), url(../fonts/lusitana-bold-700.woff) format("woff");
-}
-@font-face {
-    font-family: "Ovo";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Ovo"), url(../fonts/ovo-normal-400.woff) format("woff");
-}
-@font-face {
-    font-family: "Lusitana";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Lusitana"), url(../fonts/lusitana-normal-400.woff) format("woff");
-}
-@font-face {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Open Sans"), local("OpenSans"), url(../fonts/open-sans-normal-400.woff) format("woff");
-}
-body {
-    font-family: Helvetica, sans-serif;
-    font-size: 14px;
-    color: #373f43;
-    line-height: 22px;
-}
-a {
-    text-decoration: none;
-    color: #ff7e00;
-    -o-transition-property: color;
-    -o-transition-duration: 0.12s;
-    -o-transition-timing-function: ease-in;
-    -moz-transition-property: color;
-    -moz-transition-duration: 0.12s;
-    -moz-transition-timing-function: ease-in;
-    -webkit-transition-property: color;
-    -webkit-transition-duration: 0.12s;
-    -webkit-transition-timing-function: ease-in;
-    transition-property: color;
-    transition-duration: 0.12s;
-    transition-timing-function: ease-in;
-}
-a:hover {
-    color: #33b7ff;
-}
-h1, h2, h3, h4 {
-    margin: 0 0 2px 0;
-}
-h1 {
-    font-family: "Bitter", Helvetica, serif;
-    font-size: 28px;
-    margin: 0px 0 12px;
-    line-height: 32px;
-    font-weight: normal;
-}
-h2 {
-    font-size: 20px;
-    margin: 0px 0px 15px;
-}
-h3 {
-    font-size: 16px;
-    margin: 0px 0px 5px;
-}
-h4 {
-    font-size: 14px;
-}
-h2, h3 {
-    letter-spacing: -0.05em;
-    word-spacing: 0.08em;
-    color: #b6bfc3;
-}
-h4 {
-    color: #373f43;
-    text-transform: none;
-}
-p {
-    margin: 0 0 2px 0;
-    padding: 0;
-    font-size: 14px;
-    color: #373f43;
-    line-height: 22px;
-}
-p+h1, p+h2, p+h3, p+h4, p+p {
-    margin-top: 15px;
-}
-p.subtitle {
-    letter-spacing: -0.05em;
-    word-spacing: 0.08em;
-    color: #65747b;
-}
+
 [class^="icon2-"], [class*=" icon2-"] {
     display: inline-block;
     width: 18px;
@@ -430,7 +283,7 @@ header #logo {
     margin-top: 1px;
     width: 114.4px;
     height: 26px;
-    background-image: url(../images/logo2.png);
+    background-image: url(./images/logo2.png);
     margin-right: 60px;
     text-indent: -999em;
 }
@@ -482,100 +335,7 @@ header form#search ul.ui-menu li a {
 header form#search ul.ui-menu li a.ui-state-hover {
     background-color: #996633;
 }
-@font-face {
-    font-family: "Lusitana";
-    font-style: normal;
-    font-weight: 700;
-    src: local("Lusitana Bold"), local("Lusitana-Bold"), url(../fonts/lusitana-bold-700.woff) format("woff");
-}
-@font-face {
-    font-family: "Ovo";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Ovo"), url(../fonts/ovo-normal-400.woff) format("woff");
-}
-@font-face {
-    font-family: "Lusitana";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Lusitana"), url(../fonts/lusitana-normal-400.woff) format("woff");
-}
-@font-face {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Open Sans"), local("OpenSans"), url(../fonts/open-sans-normal-400.woff) format("woff");
-}
-body {
-    font-family: Helvetica, sans-serif;
-    font-size: 14px;
-    color: #373f43;
-    line-height: 22px;
-}
-a {
-    text-decoration: none;
-    color: #ff7e00;
-    -o-transition-property: color;
-    -o-transition-duration: 0.12s;
-    -o-transition-timing-function: ease-in;
-    -moz-transition-property: color;
-    -moz-transition-duration: 0.12s;
-    -moz-transition-timing-function: ease-in;
-    -webkit-transition-property: color;
-    -webkit-transition-duration: 0.12s;
-    -webkit-transition-timing-function: ease-in;
-    transition-property: color;
-    transition-duration: 0.12s;
-    transition-timing-function: ease-in;
-}
-a:hover {
-    color: #33b7ff;
-}
-h1, h2, h3, h4 {
-    margin: 0 0 2px 0;
-}
-h1 {
-    font-family: "Bitter", Helvetica, serif;
-    font-size: 28px;
-    margin: 0px 0 12px;
-    line-height: 32px;
-    font-weight: normal;
-}
-h2 {
-    font-size: 20px;
-    margin: 0px 0px 15px;
-}
-h3 {
-    font-size: 16px;
-    margin: 0px 0px 5px;
-}
-h4 {
-    font-size: 14px;
-}
-h2, h3 {
-    letter-spacing: -0.05em;
-    word-spacing: 0.08em;
-    color: #b6bfc3;
-}
-h4 {
-    color: #373f43;
-    text-transform: none;
-}
-p {
-    margin: 0 0 2px 0;
-    padding: 0;
-    font-size: 14px;
-    color: #373f43;
-    line-height: 22px;
-}
-p+h1, p+h2, p+h3, p+h4, p+p {
-    margin-top: 15px;
-}
-p.subtitle {
-    letter-spacing: -0.05em;
-    word-spacing: 0.08em;
-    color: #65747b;
-}
+
 .dropdown {
     margin-bottom: 20px;
     margin-left: 0;
@@ -761,100 +521,7 @@ p.subtitle {
 .dropdown-share .embed:hover {
     background: #2c3235;
 }
-@font-face {
-    font-family: "Lusitana";
-    font-style: normal;
-    font-weight: 700;
-    src: local("Lusitana Bold"), local("Lusitana-Bold"), url(../fonts/lusitana-bold-700.woff) format("woff");
-}
-@font-face {
-    font-family: "Ovo";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Ovo"), url(../fonts/ovo-normal-400.woff) format("woff");
-}
-@font-face {
-    font-family: "Lusitana";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Lusitana"), url(../fonts/lusitana-normal-400.woff) format("woff");
-}
-@font-face {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Open Sans"), local("OpenSans"), url(../fonts/open-sans-normal-400.woff) format("woff");
-}
-body {
-    font-family: Helvetica, sans-serif;
-    font-size: 14px;
-    color: #373f43;
-    line-height: 22px;
-}
-a {
-    text-decoration: none;
-    color: #ff7e00;
-    -o-transition-property: color;
-    -o-transition-duration: 0.12s;
-    -o-transition-timing-function: ease-in;
-    -moz-transition-property: color;
-    -moz-transition-duration: 0.12s;
-    -moz-transition-timing-function: ease-in;
-    -webkit-transition-property: color;
-    -webkit-transition-duration: 0.12s;
-    -webkit-transition-timing-function: ease-in;
-    transition-property: color;
-    transition-duration: 0.12s;
-    transition-timing-function: ease-in;
-}
-a:hover {
-    color: #33b7ff;
-}
-h1, h2, h3, h4 {
-    margin: 0 0 2px 0;
-}
-h1 {
-    font-family: "Bitter", Helvetica, serif;
-    font-size: 28px;
-    margin: 0px 0 12px;
-    line-height: 32px;
-    font-weight: normal;
-}
-h2 {
-    font-size: 20px;
-    margin: 0px 0px 15px;
-}
-h3 {
-    font-size: 16px;
-    margin: 0px 0px 5px;
-}
-h4 {
-    font-size: 14px;
-}
-h2, h3 {
-    letter-spacing: -0.05em;
-    word-spacing: 0.08em;
-    color: #b6bfc3;
-}
-h4 {
-    color: #373f43;
-    text-transform: none;
-}
-p {
-    margin: 0 0 2px 0;
-    padding: 0;
-    font-size: 14px;
-    color: #373f43;
-    line-height: 22px;
-}
-p+h1, p+h2, p+h3, p+h4, p+p {
-    margin-top: 15px;
-}
-p.subtitle {
-    letter-spacing: -0.05em;
-    word-spacing: 0.08em;
-    color: #65747b;
-}
+
 #breadcrumb {
     font-size: 13px;
     line-height: 16px;
@@ -1039,100 +706,7 @@ body {
     font-weight: bold;
     font-weight: normal;
 }
-@font-face {
-    font-family: "Lusitana";
-    font-style: normal;
-    font-weight: 700;
-    src: local("Lusitana Bold"), local("Lusitana-Bold"), url(../fonts/lusitana-bold-700.woff) format("woff");
-}
-@font-face {
-    font-family: "Ovo";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Ovo"), url(../fonts/ovo-normal-400.woff) format("woff");
-}
-@font-face {
-    font-family: "Lusitana";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Lusitana"), url(../fonts/lusitana-normal-400.woff) format("woff");
-}
-@font-face {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Open Sans"), local("OpenSans"), url(../fonts/open-sans-normal-400.woff) format("woff");
-}
-body {
-    font-family: Helvetica, sans-serif;
-    font-size: 14px;
-    color: #373f43;
-    line-height: 22px;
-}
-a {
-    text-decoration: none;
-    color: #ff7e00;
-    -o-transition-property: color;
-    -o-transition-duration: 0.12s;
-    -o-transition-timing-function: ease-in;
-    -moz-transition-property: color;
-    -moz-transition-duration: 0.12s;
-    -moz-transition-timing-function: ease-in;
-    -webkit-transition-property: color;
-    -webkit-transition-duration: 0.12s;
-    -webkit-transition-timing-function: ease-in;
-    transition-property: color;
-    transition-duration: 0.12s;
-    transition-timing-function: ease-in;
-}
-a:hover {
-    color: #33b7ff;
-}
-h1, h2, h3, h4 {
-    margin: 0 0 2px 0;
-}
-h1 {
-    font-family: "Bitter", Helvetica, serif;
-    font-size: 28px;
-    margin: 0px 0 12px;
-    line-height: 32px;
-    font-weight: normal;
-}
-h2 {
-    font-size: 20px;
-    margin: 0px 0px 15px;
-}
-h3 {
-    font-size: 16px;
-    margin: 0px 0px 5px;
-}
-h4 {
-    font-size: 14px;
-}
-h2, h3 {
-    letter-spacing: -0.05em;
-    word-spacing: 0.08em;
-    color: #b6bfc3;
-}
-h4 {
-    color: #373f43;
-    text-transform: none;
-}
-p {
-    margin: 0 0 2px 0;
-    padding: 0;
-    font-size: 14px;
-    color: #373f43;
-    line-height: 22px;
-}
-p+h1, p+h2, p+h3, p+h4, p+p {
-    margin-top: 15px;
-}
-p.subtitle {
-    letter-spacing: -0.05em;
-    word-spacing: 0.08em;
-    color: #65747b;
-}
+
 .controls {
     display: block;
     position: absolute;
@@ -1255,76 +829,7 @@ p.subtitle {
     font-weight: 400;
     src: local("Open Sans"), local("OpenSans"), url(../fonts/open-sans-normal-400.woff) format("woff");
 }
-body {
-    font-family: Helvetica, sans-serif;
-    font-size: 14px;
-    color: #373f43;
-    line-height: 22px;
-}
-a {
-    text-decoration: none;
-    color: #ff7e00;
-    -o-transition-property: color;
-    -o-transition-duration: 0.12s;
-    -o-transition-timing-function: ease-in;
-    -moz-transition-property: color;
-    -moz-transition-duration: 0.12s;
-    -moz-transition-timing-function: ease-in;
-    -webkit-transition-property: color;
-    -webkit-transition-duration: 0.12s;
-    -webkit-transition-timing-function: ease-in;
-    transition-property: color;
-    transition-duration: 0.12s;
-    transition-timing-function: ease-in;
-}
-a:hover {
-    color: #33b7ff;
-}
-h1, h2, h3, h4 {
-    margin: 0 0 2px 0;
-}
-h1 {
-    font-family: "Bitter", Helvetica, serif;
-    font-size: 28px;
-    margin: 0px 0 12px;
-    line-height: 32px;
-    font-weight: normal;
-}
-h2 {
-    font-size: 20px;
-    margin: 0px 0px 15px;
-}
-h3 {
-    font-size: 16px;
-    margin: 0px 0px 5px;
-}
-h4 {
-    font-size: 14px;
-}
-h2, h3 {
-    letter-spacing: -0.05em;
-    word-spacing: 0.08em;
-    color: #b6bfc3;
-}
-h4 {
-    color: #373f43;
-    text-transform: none;
-}
-p {
-    margin: 0 0 2px 0;
-    padding: 0;
-    font-size: 14px;
-    color: #373f43;
-    line-height: 22px;
-}
-p+h1, p+h2, p+h3, p+h4, p+p {
-    margin-top: 15px;
-}
-p.subtitle {
-    letter-spacing: -0.05em;
-    word-spacing: 0.08em;
-    color: #65747b;
-}
+
 #steps {
     margin-top: 25px !important;
 }
@@ -1452,100 +957,7 @@ p.subtitle {
 #steps .warning {
     background-color: #fff7ed;
 }
-@font-face {
-    font-family: "Lusitana";
-    font-style: normal;
-    font-weight: 700;
-    src: local("Lusitana Bold"), local("Lusitana-Bold"), url(../fonts/lusitana-bold-700.woff) format("woff");
-}
-@font-face {
-    font-family: "Ovo";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Ovo"), url(../fonts/ovo-normal-400.woff) format("woff");
-}
-@font-face {
-    font-family: "Lusitana";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Lusitana"), url(../fonts/lusitana-normal-400.woff) format("woff");
-}
-@font-face {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Open Sans"), local("OpenSans"), url(../fonts/open-sans-normal-400.woff) format("woff");
-}
-body {
-    font-family: Helvetica, sans-serif;
-    font-size: 14px;
-    color: #373f43;
-    line-height: 22px;
-}
-a {
-    text-decoration: none;
-    color: #ff7e00;
-    -o-transition-property: color;
-    -o-transition-duration: 0.12s;
-    -o-transition-timing-function: ease-in;
-    -moz-transition-property: color;
-    -moz-transition-duration: 0.12s;
-    -moz-transition-timing-function: ease-in;
-    -webkit-transition-property: color;
-    -webkit-transition-duration: 0.12s;
-    -webkit-transition-timing-function: ease-in;
-    transition-property: color;
-    transition-duration: 0.12s;
-    transition-timing-function: ease-in;
-}
-a:hover {
-    color: #33b7ff;
-}
-h1, h2, h3, h4 {
-    margin: 0 0 2px 0;
-}
-h1 {
-    font-family: "Bitter", Helvetica, serif;
-    font-size: 28px;
-    margin: 0px 0 12px;
-    line-height: 32px;
-    font-weight: normal;
-}
-h2 {
-    font-size: 20px;
-    margin: 0px 0px 15px;
-}
-h3 {
-    font-size: 16px;
-    margin: 0px 0px 5px;
-}
-h4 {
-    font-size: 14px;
-}
-h2, h3 {
-    letter-spacing: -0.05em;
-    word-spacing: 0.08em;
-    color: #b6bfc3;
-}
-h4 {
-    color: #373f43;
-    text-transform: none;
-}
-p {
-    margin: 0 0 2px 0;
-    padding: 0;
-    font-size: 14px;
-    color: #373f43;
-    line-height: 22px;
-}
-p+h1, p+h2, p+h3, p+h4, p+p {
-    margin-top: 15px;
-}
-p.subtitle {
-    letter-spacing: -0.05em;
-    word-spacing: 0.08em;
-    color: #65747b;
-}
+
 #text-ads>p {
     font-size: 11px;
     line-height: 13px;
@@ -1575,100 +987,7 @@ p.subtitle {
 #text-ads .text-ad .src a {
     margin-bottom: 0;
 }
-@font-face {
-    font-family: "Lusitana";
-    font-style: normal;
-    font-weight: 700;
-    src: local("Lusitana Bold"), local("Lusitana-Bold"), url(../fonts/lusitana-bold-700.woff) format("woff");
-}
-@font-face {
-    font-family: "Ovo";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Ovo"), url(../fonts/ovo-normal-400.woff) format("woff");
-}
-@font-face {
-    font-family: "Lusitana";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Lusitana"), url(../fonts/lusitana-normal-400.woff) format("woff");
-}
-@font-face {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Open Sans"), local("OpenSans"), url(../fonts/open-sans-normal-400.woff) format("woff");
-}
-body {
-    font-family: Helvetica, sans-serif;
-    font-size: 14px;
-    color: #373f43;
-    line-height: 22px;
-}
-a {
-    text-decoration: none;
-    color: #ff7e00;
-    -o-transition-property: color;
-    -o-transition-duration: 0.12s;
-    -o-transition-timing-function: ease-in;
-    -moz-transition-property: color;
-    -moz-transition-duration: 0.12s;
-    -moz-transition-timing-function: ease-in;
-    -webkit-transition-property: color;
-    -webkit-transition-duration: 0.12s;
-    -webkit-transition-timing-function: ease-in;
-    transition-property: color;
-    transition-duration: 0.12s;
-    transition-timing-function: ease-in;
-}
-a:hover {
-    color: #33b7ff;
-}
-h1, h2, h3, h4 {
-    margin: 0 0 2px 0;
-}
-h1 {
-    font-family: "Bitter", Helvetica, serif;
-    font-size: 28px;
-    margin: 0px 0 12px;
-    line-height: 32px;
-    font-weight: normal;
-}
-h2 {
-    font-size: 20px;
-    margin: 0px 0px 15px;
-}
-h3 {
-    font-size: 16px;
-    margin: 0px 0px 5px;
-}
-h4 {
-    font-size: 14px;
-}
-h2, h3 {
-    letter-spacing: -0.05em;
-    word-spacing: 0.08em;
-    color: #b6bfc3;
-}
-h4 {
-    color: #373f43;
-    text-transform: none;
-}
-p {
-    margin: 0 0 2px 0;
-    padding: 0;
-    font-size: 14px;
-    color: #373f43;
-    line-height: 22px;
-}
-p+h1, p+h2, p+h3, p+h4, p+p {
-    margin-top: 15px;
-}
-p.subtitle {
-    letter-spacing: -0.05em;
-    word-spacing: 0.08em;
-    color: #65747b;
-}
+
 footer {
     border-top: 1px solid #e4e8ea;
     clear: both;
@@ -1694,100 +1013,7 @@ footer ul li a {
 footer ul li.copyright {
     float: right;
 }
-@font-face {
-    font-family: "Lusitana";
-    font-style: normal;
-    font-weight: 700;
-    src: local("Lusitana Bold"), local("Lusitana-Bold"), url(../fonts/lusitana-bold-700.woff) format("woff");
-}
-@font-face {
-    font-family: "Ovo";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Ovo"), url(../fonts/ovo-normal-400.woff) format("woff");
-}
-@font-face {
-    font-family: "Lusitana";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Lusitana"), url(../fonts/lusitana-normal-400.woff) format("woff");
-}
-@font-face {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Open Sans"), local("OpenSans"), url(../fonts/open-sans-normal-400.woff) format("woff");
-}
-body {
-    font-family: Helvetica, sans-serif;
-    font-size: 14px;
-    color: #373f43;
-    line-height: 22px;
-}
-a {
-    text-decoration: none;
-    color: #ff7e00;
-    -o-transition-property: color;
-    -o-transition-duration: 0.12s;
-    -o-transition-timing-function: ease-in;
-    -moz-transition-property: color;
-    -moz-transition-duration: 0.12s;
-    -moz-transition-timing-function: ease-in;
-    -webkit-transition-property: color;
-    -webkit-transition-duration: 0.12s;
-    -webkit-transition-timing-function: ease-in;
-    transition-property: color;
-    transition-duration: 0.12s;
-    transition-timing-function: ease-in;
-}
-a:hover {
-    color: #33b7ff;
-}
-h1, h2, h3, h4 {
-    margin: 0 0 2px 0;
-}
-h1 {
-    font-family: "Bitter", Helvetica, serif;
-    font-size: 28px;
-    margin: 0px 0 12px;
-    line-height: 32px;
-    font-weight: normal;
-}
-h2 {
-    font-size: 20px;
-    margin: 0px 0px 15px;
-}
-h3 {
-    font-size: 16px;
-    margin: 0px 0px 5px;
-}
-h4 {
-    font-size: 14px;
-}
-h2, h3 {
-    letter-spacing: -0.05em;
-    word-spacing: 0.08em;
-    color: #b6bfc3;
-}
-h4 {
-    color: #373f43;
-    text-transform: none;
-}
-p {
-    margin: 0 0 2px 0;
-    padding: 0;
-    font-size: 14px;
-    color: #373f43;
-    line-height: 22px;
-}
-p+h1, p+h2, p+h3, p+h4, p+p {
-    margin-top: 15px;
-}
-p.subtitle {
-    letter-spacing: -0.05em;
-    word-spacing: 0.08em;
-    color: #65747b;
-}
+
 .vid-thumb {
     display: inline-block;
     background: rgba(250, 250, 250, 0.1);
@@ -1869,100 +1095,7 @@ p.subtitle {
     width: 220px;
     height: 123.75px;
 }
-@font-face {
-    font-family: "Lusitana";
-    font-style: normal;
-    font-weight: 700;
-    src: local("Lusitana Bold"), local("Lusitana-Bold"), url(../fonts/lusitana-bold-700.woff) format("woff");
-}
-@font-face {
-    font-family: "Ovo";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Ovo"), url(../fonts/ovo-normal-400.woff) format("woff");
-}
-@font-face {
-    font-family: "Lusitana";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Lusitana"), url(../fonts/lusitana-normal-400.woff) format("woff");
-}
-@font-face {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Open Sans"), local("OpenSans"), url(../fonts/open-sans-normal-400.woff) format("woff");
-}
-body {
-    font-family: Helvetica, sans-serif;
-    font-size: 14px;
-    color: #373f43;
-    line-height: 22px;
-}
-a {
-    text-decoration: none;
-    color: #ff7e00;
-    -o-transition-property: color;
-    -o-transition-duration: 0.12s;
-    -o-transition-timing-function: ease-in;
-    -moz-transition-property: color;
-    -moz-transition-duration: 0.12s;
-    -moz-transition-timing-function: ease-in;
-    -webkit-transition-property: color;
-    -webkit-transition-duration: 0.12s;
-    -webkit-transition-timing-function: ease-in;
-    transition-property: color;
-    transition-duration: 0.12s;
-    transition-timing-function: ease-in;
-}
-a:hover {
-    color: #33b7ff;
-}
-h1, h2, h3, h4 {
-    margin: 0 0 2px 0;
-}
-h1 {
-    font-family: "Bitter", Helvetica, serif;
-    font-size: 28px;
-    margin: 0px 0 12px;
-    line-height: 32px;
-    font-weight: normal;
-}
-h2 {
-    font-size: 20px;
-    margin: 0px 0px 15px;
-}
-h3 {
-    font-size: 16px;
-    margin: 0px 0px 5px;
-}
-h4 {
-    font-size: 14px;
-}
-h2, h3 {
-    letter-spacing: -0.05em;
-    word-spacing: 0.08em;
-    color: #b6bfc3;
-}
-h4 {
-    color: #373f43;
-    text-transform: none;
-}
-p {
-    margin: 0 0 2px 0;
-    padding: 0;
-    font-size: 14px;
-    color: #373f43;
-    line-height: 22px;
-}
-p+h1, p+h2, p+h3, p+h4, p+p {
-    margin-top: 15px;
-}
-p.subtitle {
-    letter-spacing: -0.05em;
-    word-spacing: 0.08em;
-    color: #65747b;
-}
+
 .vid-thumb-small {
     display: inline-block;
     margin-bottom: 4px;
@@ -2187,103 +1320,12 @@ p.subtitle {
 #experts .btn.btn-large:hover {
     background: #6a7981;
 }
-@font-face {
-    font-family: "Lusitana";
-    font-style: normal;
-    font-weight: 700;
-    src: local("Lusitana Bold"), local("Lusitana-Bold"), url(../fonts/lusitana-bold-700.woff) format("woff");
-}
-@font-face {
-    font-family: "Ovo";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Ovo"), url(../fonts/ovo-normal-400.woff) format("woff");
-}
-@font-face {
-    font-family: "Lusitana";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Lusitana"), url(../fonts/lusitana-normal-400.woff) format("woff");
-}
-@font-face {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Open Sans"), local("OpenSans"), url(../fonts/open-sans-normal-400.woff) format("woff");
-}
-body {
-    font-family: Helvetica, sans-serif;
-    font-size: 14px;
-    color: #373f43;
-    line-height: 22px;
-}
-.video-thumb img {
+.video-thumbsmall img {
     height: 160px;
     width: 280px;
 }
-a {
-    text-decoration: none;
-    color: #ff7e00;
-    -o-transition-property: color;
-    -o-transition-duration: 0.12s;
-    -o-transition-timing-function: ease-in;
-    -moz-transition-property: color;
-    -moz-transition-duration: 0.12s;
-    -moz-transition-timing-function: ease-in;
-    -webkit-transition-property: color;
-    -webkit-transition-duration: 0.12s;
-    -webkit-transition-timing-function: ease-in;
-    transition-property: color;
-    transition-duration: 0.12s;
-    transition-timing-function: ease-in;
-}
 a:hover {
     color: #ffa803;
-}
-h1, h2, h3, h4 {
-    margin: 0 0 2px 0;
-}
-h1 {
-    font-family: "Bitter", Helvetica, serif;
-    font-size: 28px;
-    margin: 0px 0 12px;
-    line-height: 32px;
-    font-weight: normal;
-}
-h2 {
-    font-size: 20px;
-    margin: 0px 0px 15px;
-}
-h3 {
-    font-size: 16px;
-    margin: 0px 0px 5px;
-}
-h4 {
-    font-size: 14px;
-}
-h2, h3 {
-    letter-spacing: -0.05em;
-    word-spacing: 0.08em;
-    color: #b6bfc3;
-}
-h4 {
-    color: #373f43;
-    text-transform: none;
-}
-p {
-    margin: 0 0 2px 0;
-    padding: 0;
-    font-size: 14px;
-    color: #373f43;
-    line-height: 22px;
-}
-p+h1, p+h2, p+h3, p+h4, p+p {
-    margin-top: 15px;
-}
-p.subtitle {
-    letter-spacing: -0.05em;
-    word-spacing: 0.08em;
-    color: #65747b;
 }
 .horiz-thumb-scroller {
     padding: 0;
@@ -2480,6 +1522,14 @@ body:after {
     position: relative;
     left: 16px;
     width: 280px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    *zoom: 1;
+}
+.big-topic .contentlarge {
+    position: relative;
+    left: 16px;
+    width: 360px;
     padding: 10px;
     background-color: #f4f4f4;
     *zoom: 1;

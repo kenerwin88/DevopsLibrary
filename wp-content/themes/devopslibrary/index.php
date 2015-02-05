@@ -2,7 +2,7 @@
 <body class="homepage_index">
 <header>
     <ul class="navbar">
-        <li>
+        <li><a href="http://www.devopslibrary.com" id="logo" ></a>
             <form action="http://www.devopslibrary.com/search" id="search">
                 <input autocomplete="off" class="search-query ui-autocomplete-input" id="term" name="term"
                        placeholder="Search Videos &amp; Guides" type="text">
@@ -94,7 +94,7 @@
                     <li style="display: none;">
                         <h3><?php echo get_the_excerpt(); ?></h3>
 
-                        <div class="watch"><a href="http://www.devopslibrary.com/" title="Temp">View Tutorial ▸</a>
+                        <div class="watch"><a href="<?php echo get_permalink(); ?>" title="Temp">View Tutorial ▸</a>
                         </div>
                     </li>
                     <?php endforeach;
@@ -158,7 +158,7 @@
                     <div class="category-icon food"></div>
                     <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
                         <div class="content">
-                            <span class="video-thumb"><?php the_post_thumbnail( array(280, 160) ); ?></span></span>
+                            <span class="video-thumbsmall"><?php the_post_thumbnail( array(280, 160) ); ?></span></span>
 
                             <h2><?php the_title(); ?></h2>
 
