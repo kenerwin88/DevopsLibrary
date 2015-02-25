@@ -70,7 +70,7 @@
                                         <h1><?php the_title(); ?></h1>
 
                                         <div class="category health">
-                                            <span>Configuration Management</span>
+                                            <span>Uncategorized</span>
                                         </div>
                                     </div>
                                     <div class="video-thumb">
@@ -163,7 +163,7 @@
                             <h2><?php the_title(); ?></h2>
 
                             <div class="category food">
-                                <span>MaLogging</span>
+                                <span>Uncategorized</span>
                             </div>
               <span class="expert">
                 <span class="name">Date:</span>
@@ -196,7 +196,7 @@
                             <div class="g-plusone" data-size="medium" data-annotation="inline" data-width="300"></div>
                         </li>
                         <li class="youtube-subscribe">
-                            <div class="g-ytsubscribe" data-channelid="UC3q80yTlbGzoYZFoTLQPTJw" data-layout="default"
+                            <div class="g-ytsubscribe" data-channelid="UCOnioSzUZS-ZqsRnf38V2nA" data-layout="default"
                                  data-count="default"></div>
                         </li>
                     </ul>

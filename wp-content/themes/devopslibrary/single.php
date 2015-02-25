@@ -27,66 +27,14 @@
 
 <div id="page">
     <div id="content">
+        <script src="https://apis.google.com/js/platform.js"></script>
 
-        <?php
-        global $post;
-        $args = array( 'posts_per_page' => 2, 'orderby' => 'rand' );
-        $rand_posts = get_posts( $args );
-        foreach ( $rand_posts as $post ) :
-            setup_postdata( $post ); ?>
-            <div id="big-topic-column">
-                <div class="col">
-                    <div class="big-topic">
-                        <div class="category-icon food"></div>
-                        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                            <div class="content">
-
-                                <span class="video-thumbsmall"><?php the_post_thumbnail( array(280, 160) ); ?></span></span>
-
-                                <h2><?php the_title(); ?></h2>
-
-                                <div class="category food">
-                                    <span>MaLogging</span>
-                                </div>
-              <span class="expert">
-                <span class="name">Date:</span>
-                <span class="title">January 12, 2015</span>
-              </span>
-
-                                <?php the_excerpt(); ?>
-                                <span class="watch-how">View Tutorial ▸</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        <?php endforeach;
-        wp_reset_postdata(); ?>
-        <div class="homepage-sidebar" id="big-topic-column">
-            <div class="col">
-                <div id="featured-videos">
-                    <h2>Follow DevOpsLibrary</h2>
-                    <ul id="follow-howcast">
-                        <li class="twitter-follow">
-                            <a class="twitter-follow-button"
-                               href="https://twitter.com/devopslibrary"
-                               data-show-count="true"
-                               data-lang="en">
-                                Follow @devopslibrary
-                            </a>
-                        </li>
-                        <li class="google-plus">Google Plus Placeholder
-                            <div class="g-plusone" data-size="medium" data-annotation="inline" data-width="300"></div>
-                        </li>
-                        <li class="youtube-subscribe">
-                            <div class="g-ytsubscribe" data-channelid="UC3q80yTlbGzoYZFoTLQPTJw" data-layout="default"
-                                 data-count="default"></div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
+        <span style="text-align: center;"><h3>If you like our videos please subscribe :D  Thank you!  --  <div class="g-ytsubscribe" data-channelid="UCOnioSzUZS-ZqsRnf38V2nA" data-layout="full" data-count="default"></div></h3></span>
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+        <?php the_content("Continue reading " . get_the_title()); ?>
+        <?php endwhile; else : ?>
+            <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+        <?php endif; ?>
 
     </div>
     <script>
