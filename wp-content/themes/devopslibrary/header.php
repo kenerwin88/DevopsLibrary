@@ -22,8 +22,6 @@
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
 	<script src="<?php bloginfo('stylesheet_directory'); ?>/scripts/twitter.js" async=""></script>
 	<script src="https://apis.google.com/js/platform.js" async defer></script>
-	<script src="<?php bloginfo('stylesheet_directory'); ?>/scripts/cb=gapi.loaded_1" async=""></script>
-	<script src="<?php bloginfo('stylesheet_directory'); ?>/scripts/cb=gapi.loaded_0" async=""></script>
 	<script src="https://apis.google.com/js/platform.js"></script>
 	<script src="<?php bloginfo('stylesheet_directory'); ?>/scripts/quant.js" async="" type="text/javascript"></script>
 	<script type="text/javascript" async="" src="<?php bloginfo('stylesheet_directory'); ?>/scripts/plusone.js" gapi_processed="true"></script>
