@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: Search Page
+*/
+?>
 <?php get_header(); ?>
 <body class="homepage_index">
 <header>
@@ -28,7 +33,7 @@
 <div id="page">
     <div id="content">
         <script src="https://apis.google.com/js/platform.js"></script>
-
+        <?php get_search_form(); ?>
         <span style="text-align: center;"><h3>If you like our videos please subscribe :D  Thank you!  --  <div class="g-ytsubscribe" data-channelid="UCOnioSzUZS-ZqsRnf38V2nA" data-layout="full" data-count="default"></div></h3></span>
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <?php the_content("Continue reading " . get_the_title()); ?>

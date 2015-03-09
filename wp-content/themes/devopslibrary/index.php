@@ -3,9 +3,9 @@
 <header>
     <ul class="navbar">
         <li><a href="http://www.devopslibrary.com" id="logo" ></a>
-            <form action="http://www.devopslibrary.com/search" id="search">
-                <input autocomplete="off" class="search-query ui-autocomplete-input" id="term" name="term"
-                       placeholder="Search Videos &amp; Guides" type="text">
+            <form action="<?php bloginfo('home'); ?>" id="search">
+                <input autocomplete="off" class="search-query ui-autocomplete-input" id="s" name="s"
+                       placeholder="Search Videos &amp; Guides" type="text" value="<?php echo wp_specialchars($s, 1); ?>">
                 <a class="search-submit-link" href="http://www.devopslibrary.com/#"><i
                         class="icon2-search"></i>Search</a>
                 <input style="display:none;" type="submit" value="Search">
